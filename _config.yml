@@ -1,3 +1,80 @@
-remote_theme: pages-themes/cayman@v0.2.0
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@SvenjaGuhr 
+SvenjaGuhr
+/
+blog
+Public
+Code
+Issues
+Pull requests
+7
+Actions
+Projects
+Security
+Insights
+blog/_config.yml
+@SvenjaGuhr
+SvenjaGuhr new blog
+Latest commit 5a67906 on Aug 9, 2019
+ History
+ 1 contributor
+Executable File  36 lines (30 sloc)  1.03 KB
+
+future: true
+title: Site of Svenja Guhr
+description: Personal website of Svenja Guhr, mainly Computational Literary Studies content
+permalink: ':title/'
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "svenjaguhr.github.io" 
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: "Svenja Guhr" # add your name
+#author-img: "konle.jpg" # add your photo
+about-author: "Phd student (Computational Literary Studies) at Technical University Darmstadt" # add description
+social-twitter: "guhr_s" # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: "SvenjaGuhr" # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: "svenjaguhr@gmail.com" # add your Email address
+
+# Disqus
+discus-identifier:  # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+google_analytics: #
+
+# Build Settings
+markdown: kramdown
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+blog/_config.yml at master · SvenjaGuhr/blog
