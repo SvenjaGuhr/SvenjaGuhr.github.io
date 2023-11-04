@@ -1,7 +1,4 @@
 theme: jekyll-theme-minimal
 title: Svenja Guhr
 description: Personal website of Svenja Guhr
-permalink: ':title/'
-baseurl: "/SvenjaGuhr.github.io" # the subpath of your site, e.g. /SvenjaGuhr.github.io
-url: "svenjaguhr.github.io" 
-site-twitter: guhr_s
+
