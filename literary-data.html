@@ -81,6 +81,8 @@
         fetch('data/data.json') // Update the path to your JSON file
             .then(response => response.json())
             .then(data => {
+        // Sort the data by ID_theme_d_Prose in ascending order
+                data.sort((a, b) => a.ID_theme_d_Prose - b.ID_theme_d_Prose);
                 const tableBody = document.getElementById('data-table').querySelector('tbody');
                 data.forEach(row => {
                     const tr = document.createElement('tr');
