@@ -85,25 +85,25 @@
                 data.forEach(row => {
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
-                        <td>${row.filename}</td>
-                        <td>${row.ID_theme_d_Prose}</td>
-                        <td>${row.ID_d_Prose}</td>
-                        <td>${row.repository}</td>
-                        <td>${row.author_whole_name}</td>
-                        <td>${row.author_pseudonyms}</td>
-                        <td>${row.author_used_name}</td>
-                        <td>${row.author_nationality}</td>
-                        <td>${row.author_birth_year}</td>
-                        <td>${row.author_death_year}</td>
-                        <td>${row.author_gender}</td>
-                        <td>${row.gnd_number}</td>
-                        <td>${row.title}</td>
-                        <td>${row.used_date}</td>
-                        <td>${row.genre}</td>
-                        <td>${row.sample_fictional_time}</td>
-                        <td>${row.sample_fictional_space}</td>
-                        <td>${row.token_count}</td>
-                        <td>${row.word_count}</td>`;
+                        <td>${row.filename || 'N/A'}</td>
+                        <td>${row.ID_theme_d_Prose || 'N/A'}</td>
+                        <td>${row.ID_d_Prose || 'N/A'}</td>
+                        <td>${row.repository || 'N/A'}</td>
+                        <td>${row.author_whole_name || 'N/A'}</td>
+                        <td>${row.author_pseudonyms || 'N/A'}</td>
+                        <td>${row.author_used_name || 'N/A'}</td>
+                        <td>${row.author_nationality || 'N/A'}</td>
+                        <td>${row.author_birth_year || 'N/A'}</td>
+                        <td>${row.author_death_year || 'N/A'}</td>
+                        <td>${row.author_gender || 'N/A'}</td>
+                        <td>${row.gnd_number || 'N/A'}</td>
+                        <td>${row.title || 'N/A'}</td>
+                        <td>${row.used_date || 'N/A'}</td>
+                        <td>${row.genre || 'N/A'}</td>
+                        <td>${row.sample_fictional_time || 'N/A'}</td>
+                        <td>${row.sample_fictional_space || 'N/A'}</td>
+                        <td>${row.token_count || 'N/A'}</td>
+                        <td>${row.word_count || 'N/A'}</td>`;
                     tableBody.appendChild(tr);
                 });
             })
