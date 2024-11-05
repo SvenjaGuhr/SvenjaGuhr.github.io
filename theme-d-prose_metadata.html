@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Literary Data</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Literary Data</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>ID Theme</th>
+                <th>Author Name</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        fetch('data/data.json')  // Make sure this path matches where you stored data.json
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('data-table').querySelector('tbody');
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${row.filename}</td>
+                        <td>${row.ID_theme_d_Prose}</td>
+                        <td>${row.author_whole_name}</td>
+                        <!-- Add more columns as needed -->
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+</html>
