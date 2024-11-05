@@ -47,16 +47,36 @@
     </nav>
 
     <div class="container">
-        <h1>Literary Text Information</h1>
+        <h1>theme-d-prose 1848-1920 Metadata Table</h1>
         <table id="data-table">
             <thead>
                 <tr>
                     <th>Filename</th>
-                    <th>ID Theme</th>
-                    <th>Author Name</th>
-                    <th>Text Title</th>
+                    <th>ID theme-d-Prose</th>
+                    <th>ID d-Prose</th>
+                    <th>Repository</th>
+                    <th>Author Given Name</th>
+                    <th>Author Last Name</th>
+                    <th>Author Whole Name</th>
+                    <th>Author Pseudonyms</th>
+                    <th>Author Used Name</th>
+                    <th>Author Nationality</th>
+                    <th>Author Birth Year</th>
+                    <th>Author Death Year</th>
+                    <th>Author Gender</th>
+                    <th>Author Further Info</th>
+                    <th>GND Number</th>
+                    <th>Title</th>
+                    <th>Filename Copy</th>
+                    <th>Used Date</th>
                     <th>Genre</th>
-                    <th>Text Used Date</th>
+                    <th>Fictional Time</th>
+                    <th>Sample Fictional Time</th>
+                    <th>Fictional Space</th>
+                    <th>Sample Fictional Space</th>
+                    <th>Fictional Space Decision</th>
+                    <th>Token Count</th>
+                    <th>Word Count</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -74,11 +94,30 @@
                     tr.innerHTML = `
                         <td>${row.filename}</td>
                         <td>${row.ID_theme_d_Prose}</td>
+                        <td>${row.ID_d_Prose}</td>
+                        <td>${row.repository}</td>
+                        <td>${row.author_given_name}</td>
+                        <td>${row.author_last_name}</td>
                         <td>${row.author_whole_name}</td>
-                        <td>${row.text_title}</td>
-                        <td>${row.text_genre}</td>
-                        <td>${row.text_used_date}</td>
-                    `;
+                        <td>${row.author_pseudonyms}</td>
+                        <td>${row.author_used_name}</td>
+                        <td>${row.author_nationality}</td>
+                        <td>${row.author_birth_year}</td>
+                        <td>${row.author_death_year}</td>
+                        <td>${row.author_gender}</td>
+                        <td>${row.author_further_info}</td>
+                        <td>${row.gnd_number}</td>
+                        <td>${row.title}</td>
+                        <td>${row.filename_copy}</td>
+                        <td>${row.used_date}</td>
+                        <td>${row.genre}</td>
+                        <td>${row.fictional_time}</td>
+                        <td>${row.sample_fictional_time}</td>
+                        <td>${row.fictional_space}</td>
+                        <td>${row.sample_fictional_space}</td>
+                        <td>${row.fictional_space_decision}</td>
+                        <td>${row.token_count}</td>
+                        <td>${row.word_count}</td>`;
                     tableBody.appendChild(tr);
                 });
             })
