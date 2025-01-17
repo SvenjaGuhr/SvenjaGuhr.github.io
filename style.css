@@ -30,6 +30,14 @@ a:link{
   color:white;
 }
 
+p a:link{
+  color:black;
+}
+
+footer a:link{
+  color:white;
+}
+
 a:hover{
   color:#E06412;
 }
@@ -37,8 +45,8 @@ a:hover{
 /* Navi ––––––––––––––––––––––––––––––*/
 
 .navbar{
-    padding-top: 24px;
-    padding-bottom: 24px
+  padding-top: 24px;
+  padding-bottom: 24px
 }
 
 
@@ -47,12 +55,12 @@ nav a{
   text-decoration: none;
 }
 
-.nav-link.active { 
-    border-bottom: 3px solid #E06412;
+.nav-link.active {
+  border-bottom: 3px solid #E06412;
 }
 
 .navbar .nav-link{
-    color:white;
+  color:white;
 }
 
 .navbar .nav-link:hover {
@@ -102,7 +110,7 @@ nav img{
   align-items: center;
   display: flex;
   z-index: 9999;
- 
+
 }
 
 /* Modalaussehen */
@@ -126,31 +134,31 @@ nav img{
 /* Header mit Foto und Steckbrief ––––––––––––––––––––––––––––––*/
 
 .headline{ /* Iam Svenja*/
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
- }
- .subheadline{ /*Research Asociate*/
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
- }
- 
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subheadline{ /*Research Asociate*/
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .about-text{ /*Steckbrief*/
-    background-color: rgba(252, 178, 129, 0.16);
-    width: auto;
-    padding: 30px;
-    padding-left: 210px;
-    margin-top: 50px;
-    margin-left:-260px;/*
+  background-color: rgba(252, 178, 129, 0.16);
+  width: auto;
+  padding: 30px;
+  padding-left: 210px;
+  margin-top: 50px;
+  margin-left:-260px;/*
     padding-left: 200px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -166,65 +174,99 @@ nav img{
   /*max-height: 80%;*/
   width: auto;
 }
+div .icon-text{
+  display: inline-block;
+  vertical-align: top;
 
-  div .icon-text img{
-    display:inline-block;
-    vertical-align: top;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+}
+
+div .icon-text img{
+  display:inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.icon-text p{
+  display:inline-block;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+.position .icon-text p{
+  display:inline-block;
+  vertical-align: top;
+
+}
+
+.presentation-text{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1268px) {
+
+
+
+  .about img{
+    max-width: 90%;
+    /* margin-top: 50px; Abstand zur Navi oben*/
   }
+}
 
-  .icon-text p{
-    display:inline-block;
-    vertical-align: top;
-    max-width: 500px;
-  }
 
-  .position .icon-text p{
-    display:inline-block;
-    vertical-align: top;
-    
-  }
 
-  .presentation-text{
-    margin-top: 50px;
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .about-text{
+    margin-left: 0px;
+    margin-top: 0px;
     margin-bottom: 50px;
+    padding: 20px;
+
   }
 
-
-  @media (max-width: 768px) {
-  
-    .about-text{
-      margin-left: 0px;
-      margin-top: 0px;
-      margin-bottom: 50px;
-      padding: 20px;
-      
-    }
-  
-    .about img{
-      max-height: 100%;
-      margin-top: 50px; /* Abstand zur Navi oben*/
-    }
-    .icon-text p{
-      display: flex;
-    }
-    
-    .icon-text img {
-      max-height: 100%;
-      margin-top: 10px; /** Abstände zwischen icon-text-parts*/
-    }
+  .about img{
+    max-width: 100%;
+    margin-top: 50px; /* Abstand zur Navi oben*/
+  }
+  .icon-text p{
+    display: flex;
   }
 
-  @media (min-width: 768px) {
-  
-    .about img{
-      max-height: 80%;
-    }
+  .icon-text img {
+    max-height: 100%;
+    margin-top: 10px; /** Abstände zwischen icon-text-parts*/
   }
+}
 
-  /** News Section––––––––––––––––––––––––––––––*/
+@media (min-width: 768px) {
+
+  .about img{
+    max-height: 80%;
+
+  }
+}
+
+/** News Section––––––––––––––––––––––––––––––*/
 /*
   .news{
     background-color:rgba(252, 178, 129, 0.16);
@@ -232,11 +274,11 @@ nav img{
     margin-top: 50px;
   }
 
-  
+
   .row{
-   justify-content: space-evenly; um news mittig zu positionieren 
+   justify-content: space-evenly; um news mittig zu positionieren
   }
-  
+
 
   .news-item{
     display: inline-block;
@@ -255,7 +297,7 @@ nav img{
 }
 
 .news-container{
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 /*
@@ -267,202 +309,202 @@ padding: 0px;
   padding:12px;
 }
 
-  
+
   /** Upcoming Talks––––––––––––––––––––––––––––––*/
 
-  .upcom-talk h1{
-    margin-top: 30px;
-  }
+.upcom-talk h1{
+  margin-top: 30px;
+}
 
+.upcom-talk h2{
+  margin-top: 20px;
+}
+
+.upcom-talk{
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px){
   .upcom-talk h2{
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
-  .upcom-talk{
-    padding-bottom: 80px;
+  .position-pic img {
+    margin-top: 0px;
+    max-width: 100%;
   }
-
-  @media (min-width: 768px){
-    .upcom-talk h2{
-      margin-top: 0px;
-    }
-
-    .position-pic img {
-      margin-top: 0px;
-      max-width: 100%;
-    }
-  }
+}
 
 /* Project Teaser––––––––––––––––––––––––––––––*/
 
-  .teaser-section{
-    background-color:rgba(252, 178, 129, 0.16);
-    padding: 20px;
-    padding-bottom: 50px;
-    padding-top:40px;
-  }
+.teaser-section{
+  background-color:rgba(252, 178, 129, 0.16);
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-top:40px;
+}
 
-  .project img{
-    max-width: 100px;
-  }
+.project img{
+  max-width: 100px;
+}
 
-  .book-proj{
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-   
-  }
+.book-proj{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
 
-  .dig-proj{
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    text-align: center;
-    
-  }
+}
 
+.dig-proj{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
 
-  /* Buttondesign ––––––––––––––––––––––––––––––*/
-
-  .btn{
-    background-color: #E06412;
-    border: none;
-    border-radius: 10px;
-    
-  }
-  .button{
-    margin:20px 0px;
-  }
-
-  .btn:hover{
-    background-color: #A14304;
-  }
+}
 
 
-  .btn .btn-primary{
-    margin-top:20px;
-    
-  }
-  .btn:active{
-    background-color: rgba(252, 178, 129, 0.16);
-  }
+/* Buttondesign ––––––––––––––––––––––––––––––*/
+
+.btn{
+  background-color: #E06412;
+  border: none;
+  border-radius: 10px;
+
+}
+.button{
+  margin:20px 0px;
+}
+
+.btn:hover{
+  background-color: #A14304;
+}
+
+
+.btn .btn-primary{
+  margin-top:20px;
+
+}
+.btn:active{
+  background-color: rgba(252, 178, 129, 0.16);
+}
 
 
 
 
-  /* TIMELINE –––––––––––––––––––––––––––––––––––*/
+/* TIMELINE –––––––––––––––––––––––––––––––––––*/
 
-  
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-  
-  :root {
-    --red: #FCB281;
-    --dark-blue: #E06412;
-    --turquoise: #FCB281;
-    --white: #fff;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a {
-    color: inherit;
-  }
- /*
-  body {
-    font: normal 16px/1.5 "Inter", sans-serif;
-    padding-bottom: 50px;
-  }
-  */
-  
-  /* TIMELINE - INTRO SECTION */
-  
-  .intro {
-    color: var(--white);
-    background: var(--red);
-    padding: 100px 0;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /*text-align: center;*/
-  }
-  /*
-  h1 {
-    font-size: 2.5rem;
-  }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --red: #FCB281;
+  --dark-blue: #E06412;
+  --turquoise: #FCB281;
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+/*
+ body {
+   font: normal 16px/1.5 "Inter", sans-serif;
+   padding-bottom: 50px;
+ }
  */
-  /* TIMELINE - ITSELF */
 
-  .timeline {
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 1000px;
-    color: var(--dark-blue);
-  }
-  
-  .timeline ol {
-    position: relative;
-    list-style: none;
-    padding:0px;
-  }
-  
-  .timeline ol::before { /* Timelinestreifen*/
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background: var(--turquoise);
-  }
-  .timeline ol li .item-inner {
-    padding: 20px 180px;
-    margin-bottom: 8vh;
-  }
-  /*Timeline-Schrift hier definiert*/
-  
-  .timeline ol li .time-wrapper {
-    position: relative;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 0.9;
-  }
-  
-  .timeline ol li .time-wrapper::before,
-  .timeline ol li .time-wrapper::after {
-    content: "";
-    position: absolute;
-    background: var(--turquoise);
-  }
-  .timeline ol li .time-wrapper::before {
-    top: 50%;
-    left: -180px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 3px;
-    transition: width .1s linear;
-  }
-  .timeline ol li .time-wrapper::after {
-    top: calc(50% - 8px);
-    left: -60px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    transform: scale(0);
-    transform-origin: left center;
-    transition: all 0.2s linear;
-  }
+/* TIMELINE - INTRO SECTION */
 
-  /**Hier die opacity anpassen damit es läuft*/
+.intro {
+  color: var(--white);
+  background: var(--red);
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*text-align: center;*/
+}
+/*
+h1 {
+  font-size: 2.5rem;
+}
+*/
+/* TIMELINE - ITSELF */
+
+.timeline {
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  color: var(--dark-blue);
+}
+
+.timeline ol {
+  position: relative;
+  list-style: none;
+  padding:0px;
+}
+
+.timeline ol::before { /* Timelinestreifen*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--turquoise);
+}
+.timeline ol li .item-inner {
+  padding: 20px 180px;
+  margin-bottom: 8vh;
+}
+/*Timeline-Schrift hier definiert*/
+
+.timeline ol li .time-wrapper {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.timeline ol li .time-wrapper::before,
+.timeline ol li .time-wrapper::after {
+  content: "";
+  position: absolute;
+  background: var(--turquoise);
+}
+.timeline ol li .time-wrapper::before {
+  top: 50%;
+  left: -180px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 3px;
+  transition: width .1s linear;
+}
+.timeline ol li .time-wrapper::after {
+  top: calc(50% - 8px);
+  left: -60px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0);
+  transform-origin: left center;
+  transition: all 0.2s linear;
+}
+
+/**Hier die opacity anpassen damit es läuft*/
 .timeline ol li time,
 .timeline ol li .details > * {
   opacity: 0;
@@ -473,7 +515,7 @@ padding: 0px;
   display: inline-block;
   transform: translateY(-30px);
 }
- 
+
 .timeline ol li .details > * {
   transform: translateY(30px);
 }
@@ -638,12 +680,12 @@ padding: 0px;
 }
 
 tr:nth-child(even) {
-  background-color:rgba(252, 178, 129, 0.16); 
+  background-color:rgba(252, 178, 129, 0.16);
 }
 
 /* Book Projects ––––––––––––––––––––––––––––––*/
 .container .diss .pic img {
-min-width: 100px;
+  min-width: 100px;
 }
 
 .diss .pic{
