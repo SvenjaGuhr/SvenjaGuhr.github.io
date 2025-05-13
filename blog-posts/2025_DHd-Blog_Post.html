@@ -61,50 +61,37 @@
 </div>
 
 
-
-
-
     
-<!-- Publications List -->
 <div class="container mt-5">
+  <article>
     <h3 class="mb-4">Trends in den Computational Literary Studies bei den DHd-Jahrestagungen</h3>
 
-</div>
-    
-<!-- Blog Post -->
-<div class="container mt-5">
+    <p>Die Computational Literary Studies (CLS) haben sich im vergangenen Jahrzehnt als ...</p>
 
-    <ul>Die Computational Literary Studies (CLS) haben sich im vergangenen Jahrzehnt als ein dynamisches und zunehmend eigenständiges Forschungsfeld innerhalb der digitalen Geisteswissenschaften etabliert. Die DHd-Jahrestagungen bilden dabei nicht nur ein Forum für aktuelle Diskussionen, sondern auch ein Schaufenster für langfristige Entwicklungen, methodische Innovationen und disziplinäre Herausforderungen.
-        
     <h4>Etablierung und Institutionalisierung der CLS</h4>
-    <ul>Wie Hatzel et al. (2023, 1–2) in ihrem Übersichtsartikel „Machine Learning in Computational Literary Studies“ betonen, lassen sich CLS als ein Teilbereich der Digital Humanities verstehen, der sich durch die Anwendung computerbasierter Methoden auf literaturwissenschaftliche Fragestellungen auszeichnet. Die CLS haben insbesondere durch das von der DFG geförderte Schwerpunktprogramm „Computational Literary Studies“ (SPP 2207) und die Gründung des Journal of Computational Literary Studies (JCLS) in der ersten Hälfte der 2020er Jahre einen starken institutionellen Rückhalt erfahren. In der deutschsprachigen DH-Community ist die wachsende Bedeutung der CLS auch an der Entwicklung der Tagungsformate der DHd ablesbar: Wurden CLS-relevante Beiträge in früheren Jahren noch unter allgemeinen Titeln wie „Texte und Strukturen“ (2019) oder „Komplexe Textphänomene“ (2020) verhandelt, tragen die Sessions seit 2023 explizit den Titel „Computational Literary Studies“. Im Jahr 2025 genügten bereits die Kürzel „CLS Analyse“, „CLS Methoden I“ und „CLS Methoden II“ – ein deutliches Zeichen für die disziplinäre Eigenständigkeit und Sichtbarkeit der CLS. Die Etablierung der CLS in den Sessions der DHd-Jahrestagungen im Blick stellte sich mir die Frage, welche langfristigen Entwicklungen und methodischen Innovationen anhand einer Analyse der Abstracts der DHd-Jahrestagungen 2014–2025 erkennbar werden. Um relevante Beiträge zu identifizieren, habe ich basierend auf der Definition des Schwerpunktprogramms<a href="#ref2">2</a>2</ul>
-    
+    <p>Wie Hatzel et al. (2023, 1–2) in ihrem Übersichtsartikel „Machine Learning ...</p>
+
     <h4>Welche CLS-Forschungstrends zeigen sich in den Abstracts der DHd-Jahrestagungen?</h4>
-    <ul>Ein zentrales Ergebnis dieser Analyse ist die methodische Breite der CLS, die von der Anwendung gängiger DH-Verfahren wie Netzwerkanalyse, Topic Modeling und Sentimentanalyse bis hin zu klassischem maschinellem Lernen und dem Einsatz generativer Sprachmodelle reicht. Die differenzierte Behandlung von Subkategorien des maschinellen Lernens stellte sich dabei als besondere Herausforderung heraus. Schließlich wollte ich die Entwicklungen und Höhepunkte traditioneller, feature-basierter Klassifikationsalgorithmen, multi-layered neuronaler Netze im Deep Learning sowie statistisch-kontextbasierter und generativer Sprachmodelle jeweils separat visualisieren. Ein Histogramm der verwendeten Methoden als Keyword-Cluster pro Abstract zeigt, welche Verfahren wann zum ersten Mal behandelt wurden, an Bedeutung gewinnen oder verlieren.</ul>
+    <p>Ein zentrales Ergebnis dieser Analyse ist die methodische Breite der CLS ...</p>
+
     <figure>
-      <img src="trendline_clusters_deduplicated_relative.png" alt="Histogramm der verwendeten Methoden">
-        <figcaption>
-        Abb. 1: Dieses Histogramm der verwendeten Methoden als Keyword-Cluster pro Abstract visualisiert den relativen Anteil (%) der Methodengruppen pro Jahr. Eine interaktive Version dieser Graphik ist hier verfügbar.
-        </figcaption>
+      <img src="trendline_clusters_deduplicated_relative.png" alt="Histogramm der verwendeten Methoden" class="img-fluid">
+      <figcaption>
+        Abb. 1: Dieses Histogramm der verwendeten Methoden als Keyword-Cluster pro Abstract ...
+      </figcaption>
     </figure>
-    <ul>Das dargestellte Liniendiagramm (Abb. 1) zeigt die relative Präsenz der 15 häufigsten Methodengruppen in den Abstracts sortiert nach Keywordclustern (siehe Code). Die Y-Achse gibt den prozentualen Anteil an, den jede Methodengruppe im jeweiligen Jahr an der Gesamtzahl aller Abstracts hat und ermöglicht eine zeitlich normalisierte Betrachtung, bei der Schwankungen in der Gesamtanzahl der Abstracts pro Jahr berücksichtigt werden. Jeder Linienverlauf repräsentiert eine Methodengruppe und zeigt, wie oft sie im Verhältnis zur Gesamtzahl der Abstracts eines Jahres erwähnt wurde. Die Abbildung verdeutlicht die konstruktive Weiterentwicklung der CLS: Zunächst müssen Textdaten aufbereitet und in geeigneter Qualität zur Verfügung gestellt werden, bevor sie analysiert und schließlich als Grundlage für das Finetunen von Sprachmodellen verwendet werden können. Nicht überraschend ist also der Peak an Abstracts zur Aufbereitung digitaler Editionen und Textkorpora in der Anfangszeit der DHd-Jahrestagungen sowie ihre andauernde Relevanz. 
-        In den Abstracts werden die digitale Bereitstellung von Texten, der Digitalisierungsprozess sowie die Entwicklung von Qualitätsstandards in OCR, XML/TEI und Normdatenanreicherung behandelt. War auch das Preprocessing in den Anfangsjahren noch ein zentraler Diskussionspunkt, wird es in den letzten Jahren bereits nicht mehr explizit in den Abstracts aufgeführt. Dieses Nichtaufführen im Fließtext weist auf die Etablierung von anerkannten Standards in der Datenvorbereitung hin und spricht für die Qualität von Preprocessinglibraries, Pipelines und ihren Ergebnissen. 
-        Während auch Distinktivitäts- und Netzwerkanalysen ebenfalls zu den Verfahren gehören, die seit der ersten Jahrestagung vertreten sind, werden Topic Modeling und Sentimentanalyse erstmals 2015 erwähnt, sind seitdem aber nicht mehr wegzudenken, auch wenn sie seit ihrem Höhepunkten (2020 Topic Modeling, 2023 Sentimentanalyse) tendenziell rückläufig sind. Die Blütezeit der CLS hat hingegen gerade erst begonnen: Nach einem ersten Peak 2022 (Zeitpunkt der Abstracteinreichung (Juli 2021) parallel zum Ende des ersten Jahres des DFG-SPP CLS) erzielt das Keyword-Cluster<a href="#ref3">3</a>einen beeindruckenden Aufschwung mit kontinuierlich steigender Tendenz.</ul>
 
-    <ul>Ein klarer Aufwärtstrend zeigt sich auch bei „deep learning &amp; neural nets“, die ab 2015 deutlich ansteigen und sich als zunehmend wichtige Methode etablieren. Gemeinsam mit den differenzierten Keywordclustern "general machine learning" und "generative language models (LLMS)" bilden sie ein omnipräsentes Methodenrepertoire in den CLS. 
-         Besonders auffällig ist, dass Annotationen über den gesamten Zeitraum hinweg ein zentrales Element bleiben, sei es als Grundlage manueller Analysen oder als Trainings- und Testdaten für maschinelles Lernen.
+    <p>Das dargestellte Liniendiagramm (Abb. 1) zeigt die relative Präsenz der 15 häufigsten ...</p>
 
-        <section>
-            <p id="fn1"><sup>1</sup> CLS „is dedicated to developi[n]g and establishing innovative computational methods in the field of literary studies. In this emerging rese[]a[r]ch field, literary scholars are working together with computer linguists and computer scientists to discover new perspectives on literary history, narratology and style analysis“ (<a href="https://dfg-spp-cls.github.io" target="_blank">SPP 2207 CLS, 2020</a>).</p>
-            <p id="fn2"><sup>2</sup> Der verwendete Code befindet sich im <a href="https://github.com/SvenjaGuhr/CLS-Trends_at_DHd" target="_blank">GitHub Repositorium</a>. Die XML-Versionen der DHd-Abstracts sind über die <a href="https://github.com/DHd-Verband" target="_blank">DHd GitHub Repositorien</a> abrufbar. Mein besonderer Dank gilt Patrick Helling für die schnelle Bereitstellung der XML-Versionen der Jahrestagung 2025.</p>
-            <p id="fn3"><sup>3</sup> "computational literary studies (CLS)": ["computational literary studies", "CLS", "computationelle literaturwissenschaft", "komputationale literaturwissenschaft", "literary computing", "digitale literaturwissenschaft", "digital literary studies", "algorithmische literaturwissenschaft"]</p>
-        </section>
-    </ul>
+    <p>Ein klarer Aufwärtstrend zeigt sich auch bei „deep learning & neural nets“, ...</p>
+
+    <section>
+      <p id="fn1"><sup>1</sup> CLS “is dedicated to ...” (<a href="https://dfg-spp-cls.github.io" target="_blank">SPP 2207 CLS</a>).</p>
+      <p id="fn2"><sup>2</sup> Der verwendete Code befindet sich im <a href="https://github.com/SvenjaGuhr/CLS-Trends_at_DHd" target="_blank">GitHub Repositorium</a>.</p>
+      <p id="fn3"><sup>3</sup> "computational literary studies (CLS)": [... ]</p>
+    </section>
+  </article>
 </div>
-
-
-  
-
 
 
 
