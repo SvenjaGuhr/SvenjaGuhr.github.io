@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Svenja Guhr - personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body   style="padding-top: 130px;">
+
+
+
+<!-- Navi -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FCB281">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+          <img src="/src/img/SG-Logo.svg" alt="Logo" width="72" height="99" class="d-inline-block align-text-top">
+      </a>
+<!-- Burger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto justify-content-end text-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cv.html">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="dig-proj.html">Digital Humanities Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="book-proj.html">Book Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="publications.html">Publications and Talks</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="blog-contributions.html">Collection of Blog Posts</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<!-- Intro -->
+<div class="container intro">
+  <p class="headline">Collection of Blog Posts</p>
+  <!-- <p class="subheadline">Research Associate</p> -->
+</div>
+
+
+
+
+
+    
+<!-- Publications List -->
+<div class="container mt-5">
+    <h3 class="mb-4">Trends in den Computational Literary Studies bei den DHd-Jahrestagungen</h3>
+
+    <!-- Monograph and Thesis -->
+    <!-- <h4>Monograph and Thesis</h4> -->
+    <ul>
+
+Die Computational Literary Studies (CLS) haben sich im vergangenen Jahrzehnt als ein dynamisches und zunehmend eigenständiges Forschungsfeld innerhalb der digitalen Geisteswissenschaften etabliert. Die DHd-Jahrestagungen bilden dabei nicht nur ein Forum für aktuelle Diskussionen, sondern auch ein Schaufenster für langfristige Entwicklungen, methodische Innovationen und disziplinäre Herausforderungen.
+<h3>Etablierung und Institutionalisierung der CLS</h3>
+Wie Hatzel et al. (2023, 1–2) in ihrem Übersichtsartikel „Machine Learning in Computational Literary Studies“ betonen, lassen sich CLS als ein Teilbereich der Digital Humanities verstehen, der sich durch die Anwendung computerbasierter Methoden auf literaturwissenschaftliche Fragestellungen auszeichnet. Die CLS haben insbesondere durch das von der DFG geförderte Schwerpunktprogramm „Computational Literary Studies“ (SPP 2207) und die Gründung des Journal of Computational Literary Studies (JCLS) in der ersten Hälfte der 2020er Jahre einen starken institutionellen Rückhalt erfahren.
+
+In der deutschsprachigen DH-Community ist die wachsende Bedeutung der CLS auch an der Entwicklung der Tagungsformate der DHd ablesbar: Wurden CLS-relevante Beiträge in früheren Jahren noch unter allgemeinen Titeln wie „Texte und Strukturen“ (2019) oder „Komplexe Textphänomene“ (2020) verhandelt, tragen die Sessions seit 2023 explizit den Titel „Computational Literary Studies“. Im Jahr 2025 genügten bereits die Kürzel „CLS Analyse“, „CLS Methoden I“ und „CLS Methoden II“ – ein deutliches Zeichen für die disziplinäre Eigenständigkeit und Sichtbarkeit der CLS.
+
+Die Etablierung der CLS in den Sessions der DHd-Jahrestagungen im Blick stellte sich mir die Frage, welche langfristigen Entwicklungen und methodischen Innovationen anhand einer Analyse der Abstracts der DHd-Jahrestagungen 2014–2025 erkennbar werden. Um relevante Beiträge zu identifizieren, habe ich basierend auf der Definition des Schwerpunktprogramms<a href="#ref2">2</a>2
+<h3>Welche CLS-Forschungstrends zeigen sich in den Abstracts der DHd-Jahrestagungen?</h3>
+Ein zentrales Ergebnis dieser Analyse ist die methodische Breite der CLS, die von der Anwendung gängiger DH-Verfahren wie Netzwerkanalyse, Topic Modeling und Sentimentanalyse bis hin zu klassischem maschinellem Lernen und dem Einsatz generativer Sprachmodelle reicht. Die differenzierte Behandlung von Subkategorien des maschinellen Lernens stellte sich dabei als besondere Herausforderung heraus. Schließlich wollte ich die Entwicklungen und Höhepunkte traditioneller, feature-basierter Klassifikationsalgorithmen, multi-layered neuronaler Netze im Deep Learning sowie statistisch-kontextbasierter und generativer Sprachmodelle jeweils separat visualisieren. Ein Histogramm der verwendeten Methoden als Keyword-Cluster pro Abstract zeigt, welche Verfahren wann zum ersten Mal behandelt wurden, an Bedeutung gewinnen oder verlieren.
+<figure>
+  <img src="trendline_clusters_deduplicated_relative.png" alt="Histogramm der verwendeten Methoden"><figcaption>
+    Abb. 1: Dieses Histogramm der verwendeten Methoden als Keyword-Cluster pro Abstract visualisiert den relativen Anteil (%) der Methodengruppen pro Jahr. Eine interaktive Version dieser Graphik ist hier verfügbar.
+</figcaption></figure>
+Das dargestellte Liniendiagramm (Abb. 1) zeigt die relative Präsenz der 15 häufigsten Methodengruppen in den Abstracts sortiert nach Keywordclustern (siehe Code). Die Y-Achse gibt den prozentualen Anteil an, den jede Methodengruppe im jeweiligen Jahr an der Gesamtzahl aller Abstracts hat und ermöglicht eine zeitlich normalisierte Betrachtung, bei der Schwankungen in der Gesamtanzahl der Abstracts pro Jahr berücksichtigt werden. Jeder Linienverlauf repräsentiert eine Methodengruppe und zeigt, wie oft sie im Verhältnis zur Gesamtzahl der Abstracts eines Jahres erwähnt wurde.
+
+Die Abbildung verdeutlicht die konstruktive Weiterentwicklung der CLS: Zunächst müssen Textdaten aufbereitet und in geeigneter Qualität zur Verfügung gestellt werden, bevor sie analysiert und schließlich als Grundlage für das Finetunen von Sprachmodellen verwendet werden können. Nicht überraschend ist also der Peak an Abstracts zur Aufbereitung digitaler Editionen und Textkorpora in der Anfangszeit der DHd-Jahrestagungen sowie ihre andauernde Relevanz.
+
+In den Abstracts werden die digitale Bereitstellung von Texten, der Digitalisierungsprozess sowie die Entwicklung von Qualitätsstandards in OCR, XML/TEI und Normdatenanreicherung behandelt. War auch das Preprocessing in den Anfangsjahren noch ein zentraler Diskussionspunkt, wird es in den letzten Jahren bereits nicht mehr explizit in den Abstracts aufgeführt. Dieses Nichtaufführen im Fließtext weist auf die Etablierung von anerkannten Standards in der Datenvorbereitung hin und spricht für die Qualität von Preprocessinglibraries, Pipelines und ihren Ergebnissen.
+Während auch Distinktivitäts- und Netzwerkanalysen ebenfalls zu den Verfahren gehören, die seit der ersten Jahrestagung vertreten sind, werden Topic Modeling und Sentimentanalyse erstmals 2015 erwähnt, sind seitdem aber nicht mehr wegzudenken, auch wenn sie seit ihrem Höhepunkten (2020 Topic Modeling, 2023 Sentimentanalyse) tendenziell rückläufig sind. Die Blütezeit der CLS hat hingegen gerade erst begonnen: Nach einem ersten Peak 2022 (Zeitpunkt der Abstracteinreichung (Juli 2021) parallel zum Ende des ersten Jahres des DFG-SPP CLS) erzielt das Keyword-Cluster<a href="#ref3">↩</a>
+
+einen beeindruckenden Aufschwung mit kontinuierlich steigender Tendenz.
+
+Ein klarer Aufwärtstrend zeigt sich auch bei „deep learning &amp; neural nets“, die ab 2015 deutlich ansteigen und sich als zunehmend wichtige Methode etablieren. Gemeinsam mit den differenzierten Keywordclustern "general machine learning" und "generative language models (LLMS)" bilden sie ein omnipräsentes Methodenrepertoire in den CLS.
+Besonders auffällig ist, dass Annotationen über den gesamten Zeitraum hinweg ein zentrales Element bleiben, sei es als Grundlage manueller Analysen oder als Trainings- und Testdaten für maschinelles Lernen.
+
+<section>
+<p id="fn1"><sup>1</sup> CLS „is dedicated to developi[n]g and establishing innovative computational methods in the field of literary studies. In this emerging rese[]a[r]ch field, literary scholars are working together with computer linguists and computer scientists to discover new perspectives on literary history, narratology and style analysis“ (<a href="https://dfg-spp-cls.github.io" target="_blank">SPP 2207 CLS, 2020</a>).</p>
+<p id="fn2"><sup>2</sup> Der verwendete Code befindet sich im <a href="https://github.com/SvenjaGuhr/CLS-Trends_at_DHd" target="_blank">GitHub Repositorium</a>. Die XML-Versionen der DHd-Abstracts sind über die <a href="https://github.com/DHd-Verband" target="_blank">DHd GitHub Repositorien</a> abrufbar. Mein besonderer Dank gilt Patrick Helling für die schnelle Bereitstellung der XML-Versionen der Jahrestagung 2025.</p>
+<p id="fn3"><sup>3</sup> "computational literary studies (CLS)": ["computational literary studies", "CLS", "computationelle literaturwissenschaft", "komputationale literaturwissenschaft", "literary computing", "digitale literaturwissenschaft", "digital literary studies", "algorithmische literaturwissenschaft"]</p>
+
+</section>
+    </ul>
+
+    
+    <!-- Peer Reviewed Journal Articles -->
+    <h4>Peer Reviewed Journal Articles</h4>
+    <ul>
+        <li>
+            Guhr, S., Monaco, J., Sherman, A., & Algee-Hewitt, M. (accepted). “Making BERT Feel at Home. Modelling Domestic Space in 19th-Century British and Irish Fiction.” <em>Journal of Computational Literary Studies</em>, 4(1).
+        </li>
+        <li>
+            Guhr, S. (accepted). “Textannotation (mit CATMA) als Blended Learning.” <em>forTEXT Hefte</em>, 2(3).
+        </li>
+        <li>
+            Guhr, S., & Algee-Hewitt, M. (2024). “What’s that Scary Sound? Ambient Sound in Gothic Fiction.” <em>Journal of Computational Literary Studies</em>, 2(1). DOI: <a style="color:black;" href="https://doi.org/10.48694/jcls.3583" target="_blank">10.48694/jcls.3583</a>
+        </li>
+        <li>
+            Gius, E., Guhr, S., & Uglanova, I. (2021). “d-Prose 1870–1920” a Collection of German Prose Texts from 1870 to 1920. <em>Journal of Open Humanities Data</em>, 7. DOI: <a style="color:black;" href="https://doi.org/10.5334/johd.30" target="_blank">10.5334/johd.30</a>
+        </li>
+    </ul>
+
+    <!-- Peer Reviewed Conference Contributions -->
+    <h4>Peer Reviewed Conference Contributions</h4>
+
+    <!-- 2025 -->
+    <h5>2025</h5>
+    <ul>
+        <li>
+            Guhr, S., Mao, H., Lin, F., Sherman, A.J., & Algee-Hewitt, M. (accepted). “Scene Change Detection in 20th-Century US-American Romance Fiction.” Book of Abstracts of the DH 2025, ADHO Annual Conference 2025, Lisbon/hybrid.
+        </li>
+        <li>
+            Guhr, S., Mao, H., Lin, F. (2025). “Rethinking Scene Segmentation. Advancing Automated Detection of Scene Changes in Literary Texts.” The 9th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature. LaTeCH-CLfL 2025, Albuquerque/NM. <a style="color:black;" href="https://aclanthology.org/2025.latechclfl-1.8/" target="_blank">https://aclanthology.org/2025.latechclfl-1.8/</a>
+        </li>
+        <li>
+            Akazawa, M., Gerstorfer, D., Gius, E., Guhr, S., Häußler, J., Meister, M., Messner, S., Stiemer, H., & von Keitz, J. (2025). “Textannotation in der Lehre einsetzen: Ein Einstieg mit CATMA.” Book of Abstracts, 11. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2025), Bielefeld. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.14942981" target="_blank">10.5281/zenodo.14942981</a>
+        </li>
+    </ul>
+
+    <!-- 2024 -->
+    <h5>2024</h5>
+    <ul>
+        <li>
+            Häußler, J., Guhr, S., & Gius, E. (2024). “Lautstärke und Konflikt in Realismus und Naturalismus.” Book of Abstracts, 10. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2024), Passau. DOI: <a style="color:black;" href="https://doi.org/10.5281/ZENODO.10698470" target="_blank">10.5281/zenodo.10698470</a>
+        </li>
+        <li>
+            Sherman, A. J., Guhr, S., Monaco, J. M., Warner, M., Lamar, A. K., & Algee-Hewitt, M. (2024). “A Home without a ‘House’: Modelling Domestic Space in Nineteenth-Century British Fiction.” Book of Abstracts of the DH 2024, ADHO Annual Conference 2024, Washington D.C./hybrid. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.13761066" target="_blank">10.5281/zenodo.13761066</a>
+        </li>
+    </ul>
+
+    <!-- 2023 -->
+    <h5>2023</h5>
+    <ul>
+        <li>
+            Gius, E., Schöch, C., Trilcke, P., Gerstorfer, D., Guhr, S., Ripoll, E., & Sluyter-Gäthje, H. (2023a). The Journal of Computational Literary Studies (JCLS): Community, review, and editorial workflow in an Open Access Journal. 
+                <i>Book of Abstracts of the DH 2023, ADHO Annual Conference 2023, Graz.</i> DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.8107458" target="_blank">10.5281/zenodo.8107458</a>
+        </li>
+        <li>
+                Gius, E., Schöch, C., Trilcke, P., Gerstorfer, D., Guhr, S., Ripoll, E., & Sluyter-Gäthje, H. (2023b). 
+                Opening a Journal. Erfahrungen bei der Gründung des Journal of Computational Literary Studies. 
+                <i>Book of Abstracts, 9. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2023), Luxemburg/Trier.</i> DOI: <a style="color:black;" href="https://doi.org/10.5281/ZENODO.7715496" target="_blank">10.5281/zenodo.7715496</a>
+        </li>
+        <li>
+                Guhr, S., & Algee-Hewitt, M. (2023). On the Relation of Sound and Suspense in Literary Fiction. 
+                <i>Book of Abstracts of the DH 2023, ADHO Annual Conference 2023, Graz.</i> DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.8107698" target="_blank">10.5281/zenodo.8107698</a>
+        </li>
+        <li>
+                Guhr, S., Gius, E., & Stiemer, H. (2023). Vom Briefroman zu den Briefen in der Prosa. Brieftexte im d-Prose-Korpus. 
+                In S. Bartsch, L. Borek, & P. Hegel (Eds.), <i>Computer im Musenhain. Von träumenden Büchern und der Aura des Digitalen</i> 
+                (pp. 117–130). TU Prints. DOI: <a style="color:black;" href="https://doi.org/10.26083/TUPRINTS-00024712" target="_blank">10.26083/TUprints-00024712</a>
+        </li>
+    </ul>
+
+    <!-- 2022 -->
+    <h5>2022</h5>
+    <ul>
+        <li>
+            Burghardt, M., Dieckmann, L., Guhr, S., Reiter, N., Scholger, W., Steyer, T., Trilcke, P., & Wuttke, U. (2022). Offen für alle(s)? - Open Identities im Reviewprozess der DHd-Konferenz. Book of Abstracts, 8. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2022), Potsdam/virtual. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.6328144" target="_blank">10.5281/zenodo.6328144</a>
+        </li>
+        <li>
+            Guhr, S., & Gius, E. (2022). Maschinen als Erzähltheoretiker. In L. Auteri, N. Barrale, A. Di Bella, & S. Hoffmann (Eds.), Jahrbuch für Internationale Germanistik. Wege der Germanistik in transkultureller Perspektive. Akten des XIV. Kongresses der Internationalen Vereinigung für Germanistik (IVG) (Vol. 6). Peter Lang.
+        </li>
+        <li>
+            Guhr, S., Reiter, N., Zarrieß, S., & Gius, E. (2022). Shared Tasks in Computational Literary Studies: Guideline Creation, Annotation and Text Generation for the Analysis of Narrative Levels. Book of Abstracts of the DH 2022. ADHO Annual Conference 2022, Tokyo/hybrid. <a style="color:black;" href="https://dh2022.dhii.asia/dh2022bookofabsts.pdf" target="_blank">https://dh2022.dhii.asia/dh2022bookofabsts.pdf</a>
+        </li>
+        <li>
+            Guhr, S., Steyer, T., Scholger, W., Burghardt, M., Dieckmann, L., Reiter, N., Trilcke, P., & Wuttke, U. (2022). Optimiertes Peer Reviewing in den Digital Humanities. Book of Abstracts, 8. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2022), Potsdam/virtual. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.6328002" target="_blank">10.5281/zenodo.6328002</a>
+        </li>
+        <li>
+            Reiter, N., Sieker, J., Guhr, S., Gius, E., & Zarrieß, S. (2022). Exploring Text Recombination for Automatic Narrative Level Detection. Proceedings of the 13th Language Resources and Evaluation Conference, Marseille/hybrid, 3346–3353. <a style="color:black;" href="https://aclanthology.org/2022.lrec-1.357" target="_blank">https://aclanthology.org/2022.lrec-1.357</a>
+        </li>
+    </ul>
+
+    <!-- 2021 -->
+    <h5>2021</h5>
+    <ul>
+        <li>Zehe, A., Konle, L., Guhr, S., Dümpelmann, L., Gius, E., Hotho, A., Jannidis, F., Kaufmann, L., Krug, M., Puppe, F., Reiter, N., & Schreiber, A. (2021). Shared Task on Scene Segmentation (STSS). Task Description Paper. Proceedings of the 17th Conference on Natural Language Processing (KONVENS). 17th Conference on Natural Language Processing (KONVENS), Düsseldorf/online. <a style="color:black;" href="http://lsx-events.informatik.uni-wuerzburg.de/files/stss2021/proceedings/stss.pdf" target="_blank">http://lsx-events.informatik.uni-wuerzburg.de/files/stss2021/proceedings/stss.pdf</a>
+        </li>
+        <li>Guhr, S. [co-authored section] “Analysis and Evaluation of Guideline Revisions,” pp. 10–16 in article: Gius, E., Willand, M., & Reiter, N. (2021). On Organizing a Shared Task for the Digital Humanities – Conclusions and Future Paths. Journal of Cultural Analytics. DOI: <a style="color:black;" href="https://doi.org/10.22148/001c.30697" target="_blank">10.22148/001c.30697</a>
+        </li>
+    </ul>
+
+    <!-- 2020 -->
+    <h5>2020</h5>
+    <ul>
+        <li>Brokering, A., & Guhr, S. (2020). Interdisziplinäres Streitgespräch – Nutzerkommentaranalysen aus ethisch-rechtlicher Perspektive. Book of Abstracts, 7. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2020), Paderborn, p.1-3. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.4621919" target="_blank">10.5281/zenodo.4621919</a>
+        </li>
+        <li>Guhr, S. (2020a). Raise your voice! - Über den Zusammenhang zwischen Lautstärkemerkmalen in literarischen Prosatexten und der Emanzipation der Frau von 1848 bis 1920. Book of Abstracts, 7. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2020), Paderborn. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.4621917" target="_blank">10.5281/zenodo.4621917</a>
+        </li>
+        <li>Guhr, S. (2020b). En France, on hurle – au Québec, on braille! Une comparaison diachronique de l’usage des verba dicendi dans la littérature franco-québécoise et française standard. Book of Abstracts of the DH 2020, ADHO Annual Conference 2020, Ottawa/online. <a style="color:black;" href="https://dh2020.adho.org/wp-content/uploads/2020/07/560_EnFranceonhurleauQubeconbrailleUnecomparaisondiachroniquedelusagedesverbadicendidanslalittraturefrancoqubcoiseetfranaisestandard.html" target="_blank">Link</a>
+        </li>
+
+    </ul>
+
+    <!-- 2019 -->
+    <h5>2019</h5>
+    <ul>
+        <li>Guhr, S. (2019). Raise your voice - The relation of loudness in direct discourse and women’s emancipation. Book of Abstracts of the Summer School of Computational Humanities, p. 45.</li>
+        <li>Guhr, S., Varachkina, H., Lee, G. B., & Sporleder, C. (2019). Multimodales Zusammenspiel von Text und erlebter Stimme – Analyse der Lautstärkesignale in direkter Rede. Book of Abstracts, 6. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2019), Frankfurt/Main. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.4622172" target="_blank">10.5281/zenodo.4622172</a></li>
+    </ul>
+
+    <!-- 2018 -->
+    <h5>2018</h5>
+    <ul>
+        <li>Guhr, S., Pannach, F., Ziehe, S., Knauth, J., Kauf, C., & Sporleder, C. (2018). Chancen und Grenzen von Digitalen Methoden zur Analyse der politischen Meinungsbildung in Sozialen Medien. Book of Abstracts, 5. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd 2018), Köln. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.4622582" target="_blank">10.5281/zenodo.4622582</a></li>
+    </ul>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+  
+
+
+
+
+
+<!-- Footer -->
+<footer style="background-color: #FCB281" class="text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3">
+            <img src="/src/img/SG-Logo.svg" style="width:80px; height:auto;" alt="SG-Logo">
+        </div>
+        <div class="col-md-3">
+          <h2>Svenja Guhr</h2>
+          <p>Postdoctoral Researcher<br>
+          <a href="#" class="text-white">Impressum</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2>Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">About Me</a></li>
+            <li><a href="cv.html" class="text-white">Curriculum Vitae</a></li>
+            <li><a href="dig-proj.html" class="text-white">Digital Humanities Projects</a></li>
+            <li><a href="book-proj.html" class="text-white">Book Projects</a></li>
+            <li><a href="publications.html" class="text-white">Publications and Talks</a></li>
+            <li><a href="blog-contributions.html" class="text-white">Collection of Blog Posts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Contact</h2>
+          <p>Mail:  <a href="mailto:sguhr@stanford.edu">sguhr@stanford.edu</a>
+        </p>
+        </div>
+       
+      </div>
+      <div class="text-center pt-3">
+        <p>&copy; 2025 Svenja Guhr. All rights reserved.<br>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
