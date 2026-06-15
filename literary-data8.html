@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Svenja Guhr - personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        #data-table-container { overflow-x: auto; margin-bottom: 3rem; max-height: 75vh; overflow-y: auto; }
+        #data-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        #data-table th, #data-table td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        #data-table th { background-color: #f4f4f4; cursor: pointer; user-select: none; white-space: nowrap; position: sticky; top: 0; z-index: 2; }
+        #data-table th.no-sort { cursor: default; }
+        #data-table th.sorted-asc::after { content: " ▲"; font-size: 0.7em; }
+        #data-table th.sorted-desc::after { content: " ▼"; font-size: 0.7em; }
+        .filter-bar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1rem; }
+        .filter-bar label { font-weight: 600; margin-right: 0.3rem; }
+        .filter-bar input { padding: 0.3rem 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        .filter-bar input[type="number"] { width: 6rem; }
+        #result-count { margin-top: 0.5rem; font-style: italic; color: #555; }
+    </style>
+</head>
+<body style="padding-top: 130px;">
+
+
+<!-- Navi -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FCB281">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+          <img src="/src/img/SG-Logo.svg" alt="Logo" width="72" height="99" class="d-inline-block align-text-top">
+      </a>
+<!-- Burger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto justify-content-end text-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cv.html">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="dig-proj.html">Digital Humanities Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="book-proj.html">Book Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="literary-data.html">Literary Data</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<!-- Intro -->
+<div class="container intro">
+  <p class="headline">Literary Data</p>
+  <p class="subheadline">theme-d-Prose 1848–1920. German-Language Literary Fiction Corpus Metadata</p>
+</div>
+
+
+<!-- Description -->
+<div class="container proj-description">
+  <p>
+    This table provides the metadata for the <em>theme-d-Prose</em> corpus
+    (Guhr, 2024), a collection of 1,227 German-language literary prose texts (1848–1920)
+    used for the diachronic analysis of sound and loudness in fiction.
+  </p>
+  <p>
+    Full corpus and documentation: <a href="https://doi.org/10.5281/zenodo.12666499" style="color:black;" target="_blank">DOI: 10.5281/zenodo.12666499 [CC BY-NC-SA 4.0]</a>
+  </p>
+</div>
+
+
+<!-- Filters -->
+<div class="container">
+  <div class="filter-bar">
+    <div>
+      <label for="author-filter">Author Name:</label>
+      <input type="text" id="author-filter" placeholder="e.g. Fontane">
+    </div>
+    <div>
+      <label for="nationality-filter">Nationality:</label>
+      <input type="text" id="nationality-filter" placeholder="e.g. German">
+    </div>
+    <div>
+      <label for="year-min">Used Date from:</label>
+      <input type="number" id="year-min" placeholder="1848" min="1848" max="1920">
+    </div>
+    <div>
+      <label for="year-max">to:</label>
+      <input type="number" id="year-max" placeholder="1920" min="1848" max="1920">
+    </div>
+    <div>
+      <button id="reset-filters" class="btn btn-sm" style="background-color:#FCB281; border:none;">Reset</button>
+    </div>
+  </div>
+  <p id="result-count"></p>
+</div>
+
+
+<!-- Table -->
+<div class="container" id="data-table-container">
+  <table id="data-table">
+      <thead>
+          <tr>
+              <th data-key="filename">Filename</th>
+              <th class="ID_theme-d-Prose">ID theme-d-Prose</th>
+              <th data-key="ID_d_Prose">ID d-Prose</th>
+              <th data-key="repository">Repository</th>
+              <th data-key="author_whole_name">Author Whole Name</th>
+              <th data-key="author_pseudonyms">Author Pseudonyms</th>
+              <th data-key="author_used_name">Author Used Name</th>
+              <th data-key="author_nationality">Author Nationality</th>
+              <th data-key="author_birth_year">Author Birth Year</th>
+              <th data-key="author_death_year">Author Death Year</th>
+              <th data-key="author_gender">Author Gender</th>
+              <th data-key="GND_number">GND Number</th>
+              <th data-key="text_title">Title</th>
+              <th data-key="text_used_date">Used Date</th>
+              <th data-key="text_genre">Genre</th>
+              <th data-key="sample_text_fictional_time">Sample Fictional Time</th>
+              <th data-key="sample_text_fictional_space">Sample Fictional Space</th>
+              <th data-key="token_count">Token Count</th>
+              <th data-key="word_count">Word Count</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
+  </table>
+</div>
+
+
+<!-- Footer -->
+<footer style="background-color: #FCB281" class="text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3">
+            <img src="/src/img/SG-Logo.svg" style="width:80px; height:auto;" alt="SG-Logo">
+        </div>
+        <div class="col-md-3">
+          <h2>Svenja Guhr</h2>
+          <p>Postdoctoral Researcher<br>
+          <a href="#" class="text-white">Imprint</a><br>
+          <a href="https://github.com/SvenjaGuhr" class="text-white">GitHub Profile</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2>Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">About Me</a></li>
+            <li><a href="cv.html" class="text-white">Curriculum Vitae</a></li>
+            <li><a href="dig-proj.html" class="text-white">Digital Humanities Projects</a></li>
+            <li><a href="book-proj.html" class="text-white">Book Projects</a></li>
+            <li><a href="literary-data.html" class="text-white">Literary Data</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Contact</h2>
+          <p>Mail:  <a href="mailto:sguhr@berkeley.edu">sguhr@berkeley.edu</a>
+        </p>
+        </div>
+
+      </div>
+      <div class="text-center pt-3">
+        <p>&copy; 2026 Svenja Guhr. All rights reserved.<br>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+        let allData = [];
+        let currentSortKey = 'text_used_date';
+        let currentSortDir = 'asc';
+
+        const columns = [
+            'filename', 'ID_theme_d_Prose', 'ID_d_Prose', 'repository',
+            'author_whole_name', 'author_pseudonyms', 'author_used_name',
+            'author_nationality', 'author_birth_year', 'author_death_year',
+            'author_gender', 'GND_number', 'text_title', 'text_used_date',
+            'text_genre', 'sample_text_fictional_time', 'sample_text_fictional_space',
+            'token_count', 'word_count'
+        ];
+
+        function renderTable(data) {
+            const tableBody = document.getElementById('data-table').querySelector('tbody');
+            tableBody.innerHTML = '';
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = columns.map(key => `<td>${row[key] ?? 'N/A'}</td>`).join('');
+                tableBody.appendChild(tr);
+            });
+            document.getElementById('result-count').textContent =
+                `Showing ${data.length} of ${allData.length} entries`;
+        }
+
+        function applyFiltersAndSort() {
+            const authorFilter = document.getElementById('author-filter').value.trim().toLowerCase();
+            const nationalityFilter = document.getElementById('nationality-filter').value.trim().toLowerCase();
+            const yearMin = parseInt(document.getElementById('year-min').value, 10);
+            const yearMax = parseInt(document.getElementById('year-max').value, 10);
+
+            let filtered = allData.filter(row => {
+                if (authorFilter) {
+                    const whole = (row.author_whole_name || '').toLowerCase();
+                    const used = (row.author_used_name || '').toLowerCase();
+                    const pseud = (row.author_pseudonyms || '').toLowerCase();
+                    // Fuzzy match: any word in the filter must appear as a substring
+                    // in any of the author name fields (so "Fontane" matches
+                    // "Theodor Fontane")
+                    const combined = `${whole} ${used} ${pseud}`;
+                    const terms = authorFilter.split(/\s+/);
+                    const matchesAll = terms.every(term => combined.includes(term));
+                    if (!matchesAll) return false;
+                }
+
+                if (nationalityFilter) {
+                    const nat = (row.author_nationality || '').toLowerCase();
+                    if (!nat.includes(nationalityFilter)) return false;
+                }
+
+                const year = parseInt(row.text_used_date, 10);
+                if (!isNaN(yearMin) && (isNaN(year) || year < yearMin)) return false;
+                if (!isNaN(yearMax) && (isNaN(year) || year > yearMax)) return false;
+
+                return true;
+            });
+
+            filtered.sort((a, b) => {
+                let valA = a[currentSortKey];
+                let valB = b[currentSortKey];
+                const numA = parseFloat(valA);
+                const numB = parseFloat(valB);
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    valA = numA;
+                    valB = numB;
+                } else {
+                    valA = (valA ?? '').toString().toLowerCase();
+                    valB = (valB ?? '').toString().toLowerCase();
+                }
+                if (valA < valB) return currentSortDir === 'asc' ? -1 : 1;
+                if (valA > valB) return currentSortDir === 'asc' ? 1 : -1;
+                return 0;
+            });
+
+            renderTable(filtered);
+        }
+
+        function updateSortIndicators() {
+            document.querySelectorAll('#data-table th').forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                if (th.dataset.key === currentSortKey) {
+                    th.classList.add(currentSortDir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+                }
+            });
+        }
+
+        document.querySelectorAll('#data-table th').forEach(th => {
+            if (th.classList.contains('no-sort')) return;
+            th.addEventListener('click', () => {
+                const key = th.dataset.key;
+                if (currentSortKey === key) {
+                    currentSortDir = currentSortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                    currentSortKey = key;
+                    currentSortDir = 'asc';
+                }
+                updateSortIndicators();
+                applyFiltersAndSort();
+            });
+        });
+
+        document.getElementById('author-filter').addEventListener('input', applyFiltersAndSort);
+        document.getElementById('nationality-filter').addEventListener('input', applyFiltersAndSort);
+        document.getElementById('year-min').addEventListener('input', applyFiltersAndSort);
+        document.getElementById('year-max').addEventListener('input', applyFiltersAndSort);
+        document.getElementById('reset-filters').addEventListener('click', () => {
+            document.getElementById('author-filter').value = '';
+            document.getElementById('nationality-filter').value = '';
+            document.getElementById('year-min').value = '';
+            document.getElementById('year-max').value = '';
+            applyFiltersAndSort();
+        });
+
+        // Fetch data from the server
+        fetch('data/data.json') // Update the path to your JSON file
+            .then(response => response.json())
+            .then(data => {
+                allData = data;
+                updateSortIndicators();
+                applyFiltersAndSort();
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+</body>
+</html>
