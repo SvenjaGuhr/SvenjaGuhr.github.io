@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Svenja Guhr - personal website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body   style="padding-top: 130px;">
+
+
+
+<!-- Navi -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FCB281">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+          <img src="/src/img/SG-Logo.svg" alt="Logo" width="72" height="99" class="d-inline-block align-text-top">
+      </a>
+<!-- Burger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ms-auto justify-content-end text-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cv.html">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="dig-proj.html">Digital Humanities Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="book-proj.html">Book Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active text-white" href="publications.html">Publications and Talks</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="talks.html">Talks</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<!-- Intro -->
+<div class="container intro">
+  <p class="headline">Talks</p>
+  <!-- <p class="subheadline">Research Associate</p> -->
+</div>
+
+    
+
+<!-- Custom CSS for Accordion -->
+<style>
+.accordion-button:not(.collapsed) {
+    background-color: #FCB281 !important;
+    color: white; /* Ensures good contrast */
+}
+
+.accordion-button:not(.collapsed):focus {
+    box-shadow: none; /* Removes default focus effect */
+}
+</style>
+
+<!-- Talks Accordion -->
+<div class="container mt-5 mb-5">
+    <h3 class="mb-4">Talks</h3>
+    <div class="accordion" id="talksAccordion">
+
+        <!-- Talk 49 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading49">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse49" aria-expanded="true" aria-controls="collapse49">
+                    05/26/2026 - "Listening to Fiction: Tracing Sound and Loudness in Narrative"
+                </button>
+            </h2>
+            <div id="collapse49" class="accordion-collapse collapse show" aria-labelledby="heading49" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the Colloquium "LiLi revisited: Digitale Schnittstellenforschung zwischen Literaturwissenschaft und Linguistik" at the University of Bielefeld, co-organized by Text+ </p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://text-plus.org/aktuelles/veranstaltungen/2026-05-26-listening-to-fiction/">Talk Announcement</a></p>
+                 </div>
+            </div>
+        </div> 
+        
+        <!-- Talk 48 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading48">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse48" aria-expanded="false" aria-controls="collapse48">
+                    05/20/2026 - "Annotation Guideline Creation"
+                </button>
+            </h2>
+            <div id="collapse48" class="accordion-collapse collapse collapse" aria-labelledby="heading48" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Guest lecture in the graduate class "Manual Annotation and More: Catma and Gitma" at the Technical University of Darmstadt</p>
+                   <!--  <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Literary_Soundscapes">GitHub Repository "SvenjaGuhr/Literary_Soundscapes"</a></p> -->
+                </div>
+            </div>
+        </div>   
+        
+        <!-- Talk 47 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading47">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse47" aria-expanded="false" aria-controls="collapse47">
+                    05/19/2026 - "Who Makes Noise in Fiction? A Computational Approach to Character and Ambient Sound in Literature"
+                </button>
+            </h2>
+            <div id="collapse47" class="accordion-collapse collapse collapse" aria-labelledby="heading47" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the DH-Colloquium at the University of Freiburg</p>
+                   <!--  <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Literary_Soundscapes">GitHub Repository "SvenjaGuhr/Literary_Soundscapes"</a></p> -->
+                </div>
+            </div>
+        </div>   
+        
+        <!-- Talk 46 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading46">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse46" aria-expanded="false" aria-controls="collapse46">
+                    04/22/2026 - "Whispers, Alarms, and Heartbeats: A Sound Analysis of the 'Men Made in America' Series"
+                </button>
+            </h2>
+            <div id="collapse46" class="accordion-collapse collapse collapse" aria-labelledby="heading46" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the "Introduction to NLP" seminar, Department of Computer Sciences, University of Colorado at Boulder </p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://calendar.colorado.edu/event/boulder-nlp-seminar-svenja-guhr?utm_campaign=widget&utm_medium=widget&utm_source=University+of+Colorado+Boulder">Talk Announcement</a></p>
+                    <!-- <p><strong>Publication:</strong> Guhr, S. & Mahlberg, M. (2026). "Soundful Dickens. The Narrative Function of Sounds in Dickens’s Fictional Worlds." Book of Abstracts, 12. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2026), Vienna. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.18696290"> 10.5281/zenodo.18696290</a></p>-->
+                </div>
+            </div>
+        </div>   
+
+
+        <!-- Talk 45 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading45">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse45" aria-expanded="false" aria-controls="collapse45">
+                    04/21/2026 - "From Whispers to Explosions: Modeling Sound in Literary Fiction"
+                </button>
+            </h2>
+            <div id="collapse45" class="accordion-collapse collapse collapse" aria-labelledby="heading45" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Guest lecture in the "Qualitative Methods" class, University of Wyoming</p>
+                   <!--  <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Literary_Soundscapes">GitHub Repository "SvenjaGuhr/Literary_Soundscapes"</a></p> -->
+                </div>
+            </div>
+        </div>   
+        
+        <!-- Talk 44 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading44">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+                    03/18/2026 - "Whispers, Alarms, and Heartbeats: A Sound Analysis of the 'Men Made in America' Series"
+                </button>
+            </h2>
+            <div id="collapse44" class="accordion-collapse collapse collapse" aria-labelledby="heading44" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk as part of the Cultural Analytics Workshop Week at UC Berkeley. Co-sponsored by the Berkeley Institute for Data Science, the School of Information, and the Department of Scandinavian.</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.ischool.berkeley.edu/events/2026/whispers-alarms-and-heartbeats-sound-analysis-men-made-america-series">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>   
+        
+    
+        <!-- Talk 43 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading43">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse43" aria-expanded="false" aria-controls="collapse43">
+                    02/25/2026 - "Soundful Dickens. The Narrative Function of Sounds in Dickens's Fictional Worlds"
+                </button>
+            </h2>
+            <div id="collapse43" class="accordion-collapse collapse collapse" aria-labelledby="heading43" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk with Prof. Michaela Mahlberg at the annual DHd conference at the University of Vienna</p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Literary_Soundscapes">GitHub Repository "SvenjaGuhr/Literary_Soundscapes"</a></p>
+                    <p><strong>Publication:</strong> Guhr, S. & Mahlberg, M. (2026). "Soundful Dickens. The Narrative Function of Sounds in Dickens’s Fictional Worlds." Book of Abstracts, 12. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2026), Vienna. DOI: <a style="color:black;" href="https://doi.org/10.5281/zenodo.18696290"> 10.5281/zenodo.18696290</a></p>
+                </div>
+            </div>
+        </div>   
+
+        
+        <!-- Talk 42 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading42">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse42" aria-expanded="false" aria-controls="collapse42">
+                    01/28/2026 - "Sound and Suspense in the Men Made in America Novels"
+                </button>
+            </h2>
+            <div id="collapse42" class="accordion-collapse collapse collapse" aria-labelledby="heading42" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at the Stanford Literary Lab</p>
+                    <!-- <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p> -->
+                </div>
+            </div>
+        </div>         
+        
+        <!-- Talk 41 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading41">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse41" aria-expanded="false" aria-controls="collapse41">
+                    11/27/2025 - "Genre-blending in Liebesromanen"
+                </button>
+            </h2>
+            <div id="collapse41" class="accordion-collapse collapse" aria-labelledby="heading41" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited (online) talk at the hybrid Workshop "Digitale Gattungshermeneutik II: Gattungen im Kontext", German Studies Department of the University of Rostock</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.germanistik.uni-rostock.de/forschung/digital-humanities/aktuelles/n/workshop-digitale-gattungshermeneutik-ii-gattungen-in-kontexten-253353/">Talk Announcement</a></p>
+                    <!-- <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p> -->
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Talk 40 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading40">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse40" aria-expanded="false" aria-controls="collapse40">
+                    10/08/2025 - "From Annotation to Analysis: A Journey through Scenes, Sounds, and Jupyter Notebooks in CLS"
+                </button>
+            </h2>
+            <div id="collapse40" class="accordion-collapse collapse" aria-labelledby="heading40" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at DFG-SPP Computational Literary Studies Closing Event at University of Würzburg</p>
+                    <!-- <p><strong>Link:</strong> <a style="color:black;" href="https://www.uni-mannheim.de/news/sounds-of-passion-character-sound-and-scene-segmentation-in-the-20th-century-us-romance-fiction/">Talk Announcement</a></p> -->
+                    <!-- <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p> -->
+                </div>
+            </div>
+        </div> 
+                
+        <!-- Talk 39 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading39">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse39" aria-expanded="false" aria-controls="collapse39">
+                    10/06/2025 - "Sounds of Passion: Character Sound and Scene Segmentation in 20th-Century US Romance Fiction"
+                </button>
+            </h2>
+            <div id="collapse39" class="accordion-collapse collapse" aria-labelledby="heading39" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited Talk at the Seminar on "Erotic/Dark Romances", Anglistisches Seminar at University of Mannheim</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.uni-mannheim.de/news/sounds-of-passion-character-sound-and-scene-segmentation-in-the-20th-century-us-romance-fiction/">Talk Announcement</a></p> 
+                    <!-- <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p> -->
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Talk 38 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading38">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse38" aria-expanded="false" aria-controls="collapse38">
+                    10/02/2025 - "Hearing Suspense: Sound, Loudness, and Tension in Romance Novels"
+                </button>
+            </h2>
+            <div id="collapse38" class="accordion-collapse collapse" aria-labelledby="heading38" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited Talk at the Workshop on "Narratology and Computational Approaches", ENS in Paris</p>
+                    <!-- <p><strong>Link:</strong> <a style="color:black;" href="https://summit.dracor.org/computational_drama_analysis">Talk Announcement</a></p> -->
+                    <!-- <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p> -->
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Talk 37 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading37">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse37" aria-expanded="false" aria-controls="collapse37">
+                    09/03/2025 - “Sound in Drama”
+                </button>
+            </h2>
+            <div id="collapse37" class="accordion-collapse collapse" aria-labelledby="heading37" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk with Janis Pagel and Nils Reiter at DraCor Summit, in Berlin</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://summit.dracor.org/computational_drama_analysis">Talk Announcement</a></p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Sound_in_Drama">GitHub Repository "SvenjaGuhr/Sound_in_Drama"</a></p>
+                </div>
+            </div>
+        </div>         
+        
+        <!-- Talk 36 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading36">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse36" aria-expanded="false" aria-controls="collapse36">
+                    07/17/2025 - “Scene Change Detection in 20th-Century US-American Romance Fiction”
+                </button>
+            </h2>
+            <div id="collapse36" class="accordion-collapse collapse" aria-labelledby="heading36" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk at annual conference of ADHO, DH2025 in Lisbon</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.conftool.pro/dh2025/index.php?page=browseSessions&presentations=show&search=guhr">Talk Announcement</a></p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/literarylab/scene_segmentation">GitHub Repository "literarylab/scene_segmentation"</a></p>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Talk 35 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading35">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse35" aria-expanded="false" aria-controls="collapse35">
+                    07/03/2025 - “Making BERT Feel at Home. Modelling Domestic Space in 19th-Century British and Irish Fiction”
+                </button>
+            </h2>
+            <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="heading35" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at the 4th Annual Conference of Computational Literary Studies, Krakow</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://jcls.io/site/ccls2025/">Talk Announcement</a></p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/literarylab/jcls_domestic_space">GitHub Repository "literarylab/jcls_domestic_space"</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 34 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading34">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                    06/17/2025 - "'»Weil ich Dich liebe!« schrie sie ihn gellend an.' Figurengeräusche bei T. Fontane und G. Reuter – eine Fallstudie"
+                </button>
+            </h2>
+            <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="heading34" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the lecture "Multimodalität in der Literatur" at the DH-Lab, University of Hamburg</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.gw.uni-hamburg.de/ueber-die-fakultaet/digital-humanities/ueber-uns/aktuelles-dh/2025/04-07-programm-sose25.html">Talk Announcement</a></p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Character_Sound_Analysis">GitHub Repository "SvenjaGuhr/Character_Sound_Analysis"</a></p>
+                </div>
+            </div>
+        </div>        
+
+        
+        <!-- Talk 33 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading33">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                    05/21/2025 - “Literary Soundscapes – Operationalization and Analysis”
+                </button>
+            </h2>
+            <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the Digital Humanities Colloquium at the Department of Digital Humanities and Social Studies (DHSS), FAU Erlangen-Nürnberg</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.dhss.phil.fau.eu/events/svenja-guhr-literary-soundscapes-operationalization-and-analysis/">Talk Announcement</a></p>
+                    <p><strong>Slides & Code:</strong> <a style="color:black;" href="https://github.com/SvenjaGuhr/Literary_Soundscapes">GitHub Repository "SvenjaGuhr/Literary_Soundscapes"</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 32 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading32">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                    03/18/2025 - “Exploring Gendered Stereotypes in US Romance Novels”
+                </button>
+            </h2>
+            <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at Spinfo workshop, University of Cologne</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 31 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading31">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                    03/12/2025 - “Literary Computing of Scene Segmentation, Domestic Space, and Gender Stereotypes”
+                </button>
+            </h2>
+            <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="heading31" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the lecture series “Code & Kultur” at Digital Humanities Network, University of Potsdam (online)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.uni-potsdam.de/de/digital-humanities/aktivitaeten/code-and-culture-lecture-series">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 30 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading30">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                    03/04/2025 - “Textannotation (mit CATMA) als Blended Learning”
+                </button>
+            </h2>
+            <div id="collapse30" class="accordion-collapse collapse" aria-labelledby="heading30" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at workshop “Textannotation in der Lehre einsetzen: Ein Einstieg mit CATMA“ at the Annual Conference of the DHd 2025, University of Bielefeld</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 29 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading29">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                    02/26/2025 - “Dime Novels. Segmentation, Domestic Space, Gender Stereotypes – Project Update”
+                </button>
+            </h2>
+            <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk at the Stanford Literary Lab</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 28 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading28">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                    02/20/2025 - “Gender Stereotypes in Romance Novels”
+                </button>
+            </h2>
+            <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk at workshop “Characters and Gender Stereotypes in German and US-American Dime Novels” at Stanford Literary Lab</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 27 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading27">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                    01/17/2025 - "Projektmanagement in kleinen Projektgruppen"
+                </button>
+            </h2>
+            <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited online talk at "Praxiswerkstatt Projektmanagement" organized by Ulrike Wahl (Die Hochschulerfrischerin)</p>
+                    <p><strong>Details:</strong> Presentation of my management concept for small project groups</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://diehochschulerfrischerin.de/aktuelles/">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 26 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading26">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                    11/21/2024 - "Dime Novels. Segmentation, Domestic Space, Gender Stereotypes"
+                </button>
+            </h2>
+            <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk at the Stanford Literary Lab</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 25 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading25">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                    11/12/2024 - "Discovering Character Sound in German Language Fiction"
+                </button>
+            </h2>
+            <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at Oberseminar series of Humanities Data Science and Methodology Institute, Technical University of Darmstadt (hybrid)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.eventbrite.com/e/discovering-character-sound-in-german-language-fiction-by-svenja-guhr-tickets-1072997988869?aff=oddtdtcreator">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 24 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading24">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                    10/29/2024 - "Internationale Kooperationen in der computationellen Literaturwissenschaft (CLS)"
+                </button>
+            </h2>
+            <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the graduate studies lecture series "Praxis der Digital Humanities" at University of Trier (online)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://tcdh.uni-trier.de/de/event/vortrag-von-dr-svenja-guhr-der-vorlesungsreihe-praxis-der-digital-humanities">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 23 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading23">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                    10/10/2024 - "A Computational Literary Study of Fictional Sound"
+                </button>
+            </h2>
+            <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at Stanford Literary Lab to celebrate the lab members’ completed Ph.D. dissertations</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 22 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading22">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                    10/01/2024 - "Discovering Fictional Sound: Operationalization and Automation"
+                </button>
+            </h2>
+            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at CESTA Tuesday lunch seminar, Stanford University</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://cesta.stanford.edu/events/discovering-fictional-sound-operationalization-and-automation">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 21 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                    07/11/2024 - "Raise Your Voice – Character Sound in German Literary Prose"
+                </button>
+            </h2>
+            <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Doctoral Thesis Defense Talk at Technical University of Darmstadt</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://www.gugw.tu-darmstadt.de/termine_details_fb2_116608.de.jsp">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 20 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading20">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                    06/21/2024 - "Character Sound Analysis in CLS"
+                </button>
+            </h2>
+            <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at the Workshop on Fictional Characters at University of Würzburg</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 19 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading19">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                    06/19/2024 - "Soundscapes in Literatur digital untersuchen"
+                </button>
+            </h2>
+            <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk (hybrid) in the lecture series "Trends der Digital Humanities" at the University of Stuttgart</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="#">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 18 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                    02/29/2024 - "Lautstärke und Konflikt in Realismus und Naturalismus"
+                </button>
+            </h2>
+            <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk at the Annual Conference of the DHd 2024, Passau</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 17 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                    01/16/2024 - "A Home without a ‘House’. Modeling Domestic Space in Nineteenth-Century British Fiction"
+                </button>
+            </h2>
+            <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk (hybrid) at the Stanford Literary Lab</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 16 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                    11/14/2023 - "Sound in 19th Century Fiction"
+                </button>
+            </h2>
+            <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk in the CESTA Seminar Series at Stanford University</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://cesta.stanford.edu/events/svenja-guhr-sound-19th-century-fiction">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 15 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    10/25/2023 - "Sound and Narrative"
+                </button>
+            </h2>
+            <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk as part of the "Week of the Short Story" at the Stanford Literary Lab (hybrid)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 14 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    10/09/2023 - "Ambient Sound and Suspense in 19th Century Fiction"
+                </button>
+            </h2>
+            <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Invited talk at the workshop "Interdisciplinary and Experimental Approaches to Suspense and Related Phenomena", Graz (hybrid)</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 13 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    07/12/2023 - "On the Relation of Sound and Suspense in Literary Fiction"
+                </button>
+            </h2>
+            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at annual conference of ADHO, DH2023 in Graz (conference participation funded by DAAD)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 12 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    06/27/2023 - "Sound and Suspense – Scary Sounds in 19th Century English Fiction"
+                </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk within InfoDiTexT+ series (online)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://text-plus.org/en/aktuelles/veranstaltungen/2023-06-27-infoditext-vortrag-sound-and-suspense-scary-sounds-in-19th-century-english-fiction/">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 11 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    06/23/2023 - "What’s that Scary Sound?"
+                </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at the 2nd Annual Conference of Computational Literary Studies, Würzburg (presented research was funded by DAAD)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 10 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    03/13/2023 - "Modeling Domestic Space"
+                </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Joint talk (hybrid) at the Stanford Literary Lab</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://litlab.stanford.edu/news/2023-03-12-modeling-domestic-space/">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 9 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    11/14/2022 - "Loudness and Suspense in 19th Century Fiction"
+                </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at the Stanford Literary Lab (research stay funded by DAAD)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://litlab.stanford.edu/news/2022-11-13-loudness-and-suspense-in-19th-century-fiction/">Talk Announcement</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 8 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    07/08/2022 - "Kategoriensysteme entwickeln für handhabbare Kulturdaten"
+                </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Session chair and lightening talk at DHd Barcamp, Potsdam</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 7 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    03/09/2022 - "Open Peer Review"
+                </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk as part of the panel “Offen für alle(s)? -- Open Identities im Reviewprozess der DHd-Konferenz” at the Annual Conference of the DHd 2022 (online)</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Talk 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    07/20/2021 - "Maschinen als Erzähltheoretiker"
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at XIV. Kongress der Internationalen Vereinigung für Germanistik (IVG), Palermo (online)</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talk 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    02/19/2021 - "Report on Master’s Project and Teaching Experience with Sentiment Analysis"
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at “Online Workshop and Lectures: Sentiment Analysis in Literary Studies, Project Presentations (Part I)”, University of Graz (online)</p>
+                    <p><strong>Link:</strong> <a style="color:black;" href="https://gams.uni-graz.at/o:dispecs.blg.sa.2">Workshop Program</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    03/04/2020 - "Raise your voice! – Über den Zusammenhang zwischen Lautstärkemerkmalen in literarischen Prosatexten und der Emanzipation der Frau von 1848 bis 1920"
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk in the Doctoral Consortium of the Annual Conference of the DHd 2020, Paderborn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    01/29/2020 - "Lautstärkemerkmale im Kontext der Emanzipation der Frau im 19. Jh."
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk in the Doctoral Colloquium of the Institute of Linguistics and Literary Studies, Technical University of Darmstadt</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    09/24/2019 - "Geräuschanalyse in deutscher Prosa"
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk as Coachee at CRETA Workshop, University of Stuttgart</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Talk 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    09/06/2018 - "Sentimentanalyse von Userkommentaren unter Onlinezeitungsartikeln zur französischen Präsidentschaftswahl 2017"
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#talksAccordion">
+                <div class="accordion-body">
+                    <p><strong>Occasion:</strong> Talk at DRV Summer School 2018 „Romanistische Linguistik im Zeitalter der Digital Humanities: generative und kognitive Theorien“, LMU Munich</p>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer style="background-color: #FCB281" class="text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3">
+            <img src="/src/img/SG-Logo.svg" style="width:80px; height:auto;" alt="SG-Logo">
+        </div>
+        <div class="col-md-3">
+          <h2>Svenja Guhr</h2>
+          <p>Postdoctoral Researcher<br>
+          <a href="#" class="text-white">Imprint</a><br>
+          <a href="https://github.com/SvenjaGuhr" class="text-white">GitHub Profile</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h2>Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">About Me</a></li>
+            <li><a href="cv.html" class="text-white">Curriculum Vitae</a></li>
+            <li><a href="dig-proj.html" class="text-white">Digital Humanities Projects</a></li>
+            <li><a href="book-proj.html" class="text-white">Book Projects</a></li>
+            <li><a href="publications.html" class="text-white">Publications</a></li>
+            <li><a href="talks.html" class="text-white">Talks</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Contact</h2>
+          <p>Mail:  <a href="mailto:sguhr@berkeley.edu">sguhr@berkeley.edu</a>
+        </p>
+        </div>
+       
+      </div>
+      <div class="text-center pt-3">
+        <p>&copy; 2026 Svenja Guhr. All rights reserved.<br>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
